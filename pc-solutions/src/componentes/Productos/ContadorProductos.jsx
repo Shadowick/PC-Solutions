@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './ContadorProductos';
 
 const Contador = ({ stock, onAdd }) => {
     const [cantidad, setCantidad] = useState(1);

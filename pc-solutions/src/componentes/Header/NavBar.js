@@ -10,16 +10,13 @@ import { Link, NavLink } from 'react-router-dom';
           <Link className="links" to="/">
             <img src={Logopcsolutions} alt="Logo"></img>
           </Link>
-          {/* <a className="navbar-brand" href="#">
-          <img src={Logopcsolutions} alt="Logo"></img>
-          </a> */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-              <NavLink className="links" to="/categoria/Placas de Video">
+              <NavLink className="links" to="/categoria/Placas de video">
                     Placas de Video
                 </NavLink>              
                 </li>

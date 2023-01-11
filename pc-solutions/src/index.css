@@ -53,6 +53,13 @@ li {
   list-style: none;
 }
 
+.links {
+  padding: 4px 6px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 10px;
+}
+
 header ul {
   display: flex;
   padding: 0;
@@ -70,12 +77,3 @@ header ul li a {
 .imgLogo {
   width: 150px;
 }
-
-/* header .cart {
-  position: relative;
-  cursor: pointer;
-}
-header .cart box-icon{
-  width: 45px;
-  height: 45px;
-} */

@@ -1,43 +1,51 @@
 import React from 'react'
 import Logopcsolutions from "../../img/logo-pc-solutions.png";
+import CartWidget from '../Cart/CartWidget';
+import { Link, NavLink } from 'react-router-dom';
 
-
-export const NavBar =() => {
+/* export  */const NavBar =() => {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <Link className="links" to="/">
+            <img src={Logopcsolutions} alt="Logo"></img>
+          </Link>
+          {/* <a className="navbar-brand" href="#">
           <img src={Logopcsolutions} alt="Logo"></img>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          </a> */}
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicio Técnico</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Marcas</a>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+              <NavLink className="links" to="/categoria/Placas de Video">
+                    Placas de Video
+                </NavLink>              
+                </li>
+              <li className="nav-item">
+              <NavLink className="links" to="/categoria/Microprocesadores">
+                    Microprocesadores
+                </NavLink>
+                </li>
+              <li className="nav-item">
+              <NavLink className="links" to="/categoria/Memoria RAM">
+                    Memoria RAM
+                </NavLink>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <form className="d-flex">
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+              <button className="btn btn-outline-success" type="submit">Buscar</button>
             </form> 
           </div>
-          <div className='cart'>
-                <box-icon name="cart"></box-icon>
-                <span className='item__total'>3</span>
-            </div>
+          <Link className="links" to="/cart">
+            <CartWidget />
+          </Link>
         </div>
       </nav>
 
     )
 }
+
+export default NavBar;

@@ -1,7 +1,4 @@
-
-/* -----------------SIN BOOTSTRAP----------------- */
-
-import React from 'react'
+/* import React from 'react'
 import Logopcsolutions from "../../img/logo-pc-solutions.png";
 
 
@@ -28,4 +25,4 @@ export const Header =() => {
         </header>
 
     )
-}
+} */
